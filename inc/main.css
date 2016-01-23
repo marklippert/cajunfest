@@ -1,0 +1,490 @@
+/*
+#697B7C - light gray
+#4C4C4B - gray
+#415051 - dark gray
+#3F4E4F - darker gray
+#97A241 - dark green
+#AEBA52 - light green
+#B5001E - red
+*/
+
+BODY {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF url(../images/background.jpg) top center repeat-x;
+  color: #4C4C4B;
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 95%; /* 100% = 16px; 95% = 15px; 90% = 14px; 80% = 13px; 75% = 12px; */
+  line-height: 1.5em;
+}
+
+IMG {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+HR {
+  border: none 0;
+  border-top: 1pt solid #4C4C4B; /* the border */
+  height: 1pt; /* whatever the total width of the border-top and border-bottom equal */
+}
+
+A:link, A:visited {
+  color: #97A241;
+  text-decoration: none;
+}
+
+A:hover, A:active {
+  color: #AEBA52;
+  text-decoration: none;
+}
+
+H1 {
+  font-size: 1.4em;
+  color: #AEBA52;
+}
+
+H2 {
+  font-size: 1.2em;
+  color: #B5001E;
+  margin: 0;
+}
+
+UL {
+  padding: 0 0 0 0.2em;
+  margin: 0 0 0 0.2em;
+  list-style-type: none;
+  background: none;
+}
+
+LI {
+  background: url(../images/apple-touch-icon.png) no-repeat 0 0.3em;
+  background-size: auto 1em;
+  padding-left: 1.3em;
+}
+
+.clearfix:before, .clearfix:after,
+HEADER:before, HEADER:after,
+NAV:before, NAV:after { content: ""; display: table; }
+.clearfix:after, HEADER:after, NAV:after { clear: both; }
+.clearfix, HEADER, NAV { zoom: 1; }
+
+HEADER {
+  margin: 0 auto 13px;
+  width: 989px;
+  height: 173px;
+  position: relative;
+}
+
+#logo {
+  float: left;
+}
+
+.collapse {
+  height: auto;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+
+.collapse.in {
+  height: 0;
+}
+
+#menu-toggle {
+  display: none;
+  position: absolute;
+  top: 1em;
+  right: 3%;
+  z-index: 99;
+  cursor: pointer;
+  padding: 0.8em 0.9em;
+  background-color: #000000;
+  -webkit-border-radius: 5pt;
+  -moz-border-radius: 5pt;
+  border-radius: 5pt;
+  border: 0;
+}
+
+.icon-bar {
+  display: block;
+  margin: 0.4em 0;
+  width: 2.5em;
+  height: 0.4em;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 5pt;
+  -moz-border-radius: 5pt;
+  border-radius: 5pt;
+}
+
+#menu UL {
+  margin: 16px 0 0 51px;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+}
+
+#menu UL LI {
+  float: left;
+  padding-right: 0.2em;
+  position: relative;
+  z-index: 99;
+  /* No custom bullets in the menu */
+  background: none;
+  padding-left: 0;
+}
+
+#menu UL LI A:link, #menu UL LI A:visited {
+  color: #415051;
+  text-decoration: none;
+  background: #97A241;
+  display: block;
+  width: auto;
+  height: 1.9em;
+  line-height: 1.9em;
+  padding: 0 0.9em;
+  white-space: nowrap;
+}
+
+* html #menu UL LI A:link, * html #menu UL LI A:visited { width: 1em; }
+
+#menu UL LI:hover A {
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #AEBA52;
+}
+
+#slogan {
+  position: absolute;
+  top: 96px;
+  right: 140px;
+  width: auto;
+  text-align: right;
+  color: #FFFFFF;
+  font-size: 3em;
+  line-height: 1em;
+  text-transform: lowercase;
+}
+
+#subslogan {
+  color: #AEBA52;
+  font-size: 0.4em;
+  line-height: 1em;
+  margin-top: 0.2em;
+}
+
+#content-wrap {
+  width: 917px;
+  margin: 0 auto;
+}
+
+ARTICLE {
+  float: left;
+  width: 58.23%; /* 546px */
+  padding-bottom: 2em;
+}
+
+ASIDE {
+  float: right;
+  width: 37.73%; /* 346px */
+  padding-bottom: 2em;
+}
+
+#details {
+  padding: 0.6em 0.6em 1.7em;
+  background: #AEBA52;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+
+#details H2 {
+  padding: 0.55em;
+  background: #97A241;
+  color: #FFFFFF;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+#links {
+  background: #3F4E4F;
+}
+
+* html #links { padding-top: 0.5em; }
+
+#links A:link, #links A:visited {
+  display: block;
+  border: 0.5em solid #3F4E4F;
+  border-top: 0;
+  padding: 0 3%;
+  max-height: auto;
+  background: #697B7C;
+  color: #FFFFFF;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+#links A:hover, #links A:active {
+  background: #798B8C;
+  color: #4C4C4B;
+}
+
+#links A:first-child {
+  border-top: 0.5em solid #3F4E4F;
+}
+
+#links A IMG {
+  margin: 4% 5% 4% 0;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+FOOTER {
+  width: 917px;
+  margin: 0 auto 2em;
+  font-size: 0.7em;
+  line-height: 1.2em;
+}
+
+IMG.right {
+  float: right;
+  margin: 0 5px 10px 25px;
+  border: 4px solid #AEBA52;
+  transform:         rotate(4deg);
+  -ms-transform:     rotate(4deg); /* IE 9 */
+  -moz-transform:    rotate(4deg); /* Firefox */
+  -webkit-transform: rotate(4deg); /* Safari and Chrome */
+  -o-transform:      rotate(4deg); /* Opera */
+  -moz-box-shadow:    3px 3px 3px 0px #555555;
+  -webkit-box-shadow: 3px 3px 3px 0px #555555;
+  box-shadow:         3px 3px 3px 0px #555555;
+  max-width: 40%;
+}
+
+IMG.left {
+  float: left;
+  margin: 0 25px 10px 5px;
+  border: 4px solid #AEBA52;
+  transform:         rotate(-4deg);
+  -ms-transform:     rotate(-4deg); /* IE 9 */
+  -moz-transform:    rotate(-4deg); /* Firefox */
+  -webkit-transform: rotate(-4deg); /* Safari and Chrome */
+  -o-transform:      rotate(-4deg); /* Opera */
+  -moz-box-shadow:    3px 3px 3px 0px #555555;
+  -webkit-box-shadow: 3px 3px 3px 0px #555555;
+  box-shadow:         3px 3px 3px 0px #555555;
+  max-width: 40%;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-container iframe,   
+.iframe-container object,  
+.iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#rsvp {
+  width: 100%;
+}
+
+#rsvp TD {
+  font-size: 80%;
+  line-height: 1.5em;
+}
+
+#rsvp-form {
+  width: 75%;
+}
+
+#rsvp-form .float-label {
+  float: left;
+  width: 25%;
+}
+
+#rsvp-form .float-input {
+  float: left;
+  width: 74%;
+}
+
+#rsvp-form .left {
+  float: left;
+  padding-bottom: 1em;
+}
+
+#rsvp-form .right {
+  float: right;
+  padding-bottom: 1em;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  HEADER {
+    width: 100%;
+  }
+
+  #content-wrap, FOOTER {
+    width: 94%;
+  }
+
+  #slogan {
+    right: 3%;
+  }
+
+  #details {
+    font-size: 95%;
+    line-height: 1.4em;
+  }
+
+  #links A:link, #links A:visited {
+    font-size: 110%;
+  }
+
+  #links A IMG {
+    width: 2.5em;
+  }
+
+  #rsvp-form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #details {
+    font-size: 95%;
+  }
+
+  #links A:link, #links A:visited {
+    font-size: 105%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #menu UL {
+    margin: 20px 0 0 0;
+    font-size: 75%;
+    float: right;
+  }
+
+  #details {
+    font-size: 69%;
+  }
+
+  #links A:link, #links A:visited {
+    font-size: 80%;
+  }
+
+  #links A IMG {
+    width: 2.75em;
+  }
+
+  #rsvp-form .float-label {
+    float: none;
+    width: auto;
+  }
+
+  #rsvp-form .float-input {
+    float: none;
+    width: 100%;
+  }
+
+  #rsvp-form .left, #rsvp-form .right {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  BODY {
+    font-size: 150%;
+  }
+
+  INPUT, TEXTAREA {
+    font-size: 90%;
+  }
+  
+  .collapse {
+    height: 0;
+    overflow: hidden;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+  
+  #menu {
+    position: absolute;
+    z-index: 98;
+  }
+
+  #menu UL {
+    background-color: #3F4E4F;
+    margin: 0 0 0 3%;
+    padding: 0;
+    float: none;
+    width: auto;
+    font-size: 100%;
+  }
+
+  #menu UL LI {
+    float: none;
+    padding: 0;
+    margin: 0.4em 0.4em;
+  }
+  
+  #slogan {
+    top: 115px;
+    font-size: 1.3em;
+  }
+
+  #subslogan {
+    font-size: 0.5em;
+  }
+
+  ARTICLE {
+    float: none;
+    width: 100%;
+  }
+
+  ASIDE {
+    float: none;
+    width: 100%;
+  }
+  
+  #details {
+    font-size: 64%;
+  }
+
+  #links A:link, #links A:visited {
+    font-size: 75%;
+  }
+
+  #links A:hover, #links A:active {
+    background: #697B7C;
+    color: #FFFFFF;
+  }
+
+  #rsvp TD {
+    font-size: 60%;
+  }
+
+  #rsvp-form {
+    width: 94%;
+  }
+
+  #rsvp-form .left, #rsvp-form .right {
+    font-size: 93%;
+  }
+}

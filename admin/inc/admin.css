@@ -1,0 +1,57 @@
+ARTICLE {
+  float: none;
+  width: 100%;
+}
+
+#rsvp TD {
+  font-size: 100%;
+}
+
+.controls {
+  padding: 0.2em 0 0 0.4em;
+  white-space: nowrap;
+}
+
+.controls IMG {
+  height: 1em;
+}
+
+#rsvp-form {
+  width: 44%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+  #rsvp-form {
+    width: 54%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #rsvp-form {
+    width: 56%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #rsvp TD {
+    font-size: 60%;
+  }
+  
+  .controls {
+    white-space: normal;
+    min-width: 2.5em;
+  }
+
+  .controls IMG {
+    height: 2em;
+  }
+
+  #rsvp-form {
+    width: 100%;
+  }
+
+  #rsvp-form .float-input {
+    width: 94%;
+  }
+}
